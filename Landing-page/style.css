@@ -14,7 +14,7 @@ body{
   padding: 0;
   background: url('images/AcaWriting.jpeg') no-repeat center/cover;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   position: relative;
   overflow-y: hidden;
 }
@@ -93,7 +93,7 @@ body{
  @media screen and (min-width: 800px){
   #showcase {
      width: 100%;
-     height: 100vh;
+     height: 50vh;
    }
 
   #showcase .container{
