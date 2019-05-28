@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   overflow: hidden;
   transition: all .2s ease;
-  background-color: yellow;
+  background-color: #ebc6c6;
 }
 
 .card:hover {
@@ -44,7 +44,7 @@ body {
 .material-icons {
   color: #83d2d4;
   display: none;
-} 
+}
 
 .title {
   color: #17252a;
@@ -74,7 +74,7 @@ body {
   color: #068c9e;
   font-weight: 700;
   transition: all .2s ease;
-  background-color: blue;
+  background-color: #bf4040;
   border-radius: 6px;
   padding: 1rem;
   margin-top: 3rem;
