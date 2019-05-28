@@ -32,6 +32,11 @@ body{
   font-size: 4rem;
 }
 
+/*Description*/
+#description{
+  padding: 10rem 0;
+  color: #1a1a1a;
+}
 /*Formal Writing*/
 
 #formalwriting{
@@ -56,6 +61,7 @@ body{
 /*Footer*/
 #footer{
   padding: 5rem 0;
+  color: #1a1a1a;
 }
 /*Utility Classes*/
 .container{
@@ -85,6 +91,10 @@ body{
 
 .bg-colour3{
   background:  #999966;
+}
+
+.bg-colour4{
+  background:  #ffffff;
 }
 /*
 .lead{
