@@ -1,0 +1,89 @@
+/* CARD COMPONENT CSS ----------------------------------------------------*/
+
+/* mobile first, applies starting from 320px wide screens */
+body {
+  /*padding: .5em;*/
+  /*width: 320px;*/
+}
+
+.wrapper {
+  display: inline-block;
+  margin: 0;
+  padding: 1em 0;
+  width: 100%;
+}
+
+
+.card-wrap {
+  padding: 1em;
+}
+
+.card {
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0,0,0,.1), 0 0 2px rgba(0,0,0,.1);
+  /*display: flex;*/
+  flex-direction: column;
+  overflow: hidden;
+  transition: all .2s ease;
+  background-color: yellow;
+}
+
+.card:hover {
+  box-shadow: 0 10px 10px rgba(0,0,0,.15), 0 4px 8px rgba(0,0,0,.15);
+  transform: scale(1.05);
+  transform: translateZ(0);
+}
+
+.card-header {
+  background: linear-gradient(#e8f5f8, #feffff);
+  border: 1px solid #FFF;
+  border-radius: 6px 6px 0 0;
+  padding: 1em;
+}
+
+.material-icons {
+  color: #83d2d4;
+  display: none;
+} 
+
+.title {
+  color: #17252a;
+
+  margin: 0;
+  text-align: center;
+}
+
+.card-main {
+  padding: 1em;
+  text-align: center;
+}
+
+.main-description p {
+  color: #404040;
+  margin: 0;
+}
+
+.card-footer {
+  border-top: 1px solid #eee;
+  display: none;
+  padding: .4em;
+}
+
+.card-button {
+  display: block;
+  color: #068c9e;
+  font-weight: 700;
+  transition: all .2s ease;
+  background-color: blue;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.card-button:hover {
+  text-decoration: underline;
+}
+
+.card-button:visited {
+  color: #068c9e;
+}
