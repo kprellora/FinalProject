@@ -71,8 +71,8 @@ body {
 
 .card-button {
   display: block;
-  color: #068c9e;
-  font-weight: 700;
+  color: #eeeeee;
+  font-weight: 800;
   transition: all .2s ease;
   background-color: #bf4040;
   border-radius: 6px;
