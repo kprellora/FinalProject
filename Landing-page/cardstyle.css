@@ -1,19 +1,22 @@
 /* CARD COMPONENT CSS ----------------------------------------------------*/
 
 /* mobile first, applies starting from 320px wide screens */
-body {
-  /*padding: .5em;*/
-  /*width: 320px;*/
-}
-
 
 .wrapper {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 1rem;
   display: inline-block;
   margin: 0;
   padding: 1em 0;
-  width: 100%;
 }
 
+.flex-container {
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
 
 .card-wrap {
   padding: 1em;
@@ -103,4 +106,37 @@ body {
 
 .card-button:visited {
   color: #068c9e;
+}
+
+
+.card-button1 {
+  display: block;
+  color: #eeeeee;
+  font-weight: 800;
+  transition: all .2s ease;
+  background-color: #bf4040;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.card-button1:hover {
+  text-decoration: underline;
+}
+
+.card-button1:visited {
+  color: #068c9e;
+}
+
+
+/* MEDIA QUERIES ------------------------------------------------ */
+
+@media all and (min-width: 1000px) {
+  .wrapper {
+    display: flex;
+  }
+
+  .flex-container {
+    display: flex;
+  }
 }
