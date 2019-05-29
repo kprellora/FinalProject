@@ -6,6 +6,9 @@ body{
   margin: 0;
   color: #ffffff;
   line-height: 1.6;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 100%;
 }
 
 h3{
@@ -62,7 +65,7 @@ nav ul {
 nav li {
   display: inline-block;
   float: left;
-  width: 20rem;
+  width: 20%;
 }
 nav a {
   display: inline-block;
@@ -85,10 +88,10 @@ nav a#openup {
 }
 /*Utility Classes*/
 .container{
-  max-width: 1180px;
   text-align: center;
   margin: 0 auto;
   padding: 5rem 3rem;
+  /*background: blue;*/
 }
 
 /*Section*/
