@@ -36,7 +36,6 @@ main>section>h1 {
   font-size: 2em;
   /*background-color: pink;*/
   border-top: 2px solid black;
-  border-bottom: 2px solid black;
   font-weight: bold;
 }
 
@@ -44,7 +43,7 @@ h2:not(.heading), h3, h4 {
   color: #333333;
 }
 
-h1:not(.heading), h2:not(.heading), h3 {
+h2:not(.heading), h3 {
   border-bottom: 2px solid #eee;
   padding: .5em 0;
 }
@@ -179,10 +178,11 @@ table {
   border-collapse: collapse;
   border: 1px solid black;
   padding-left: 10px;
+
 }
 
 tr:nth-child(even){
-  background-color: #ffffff;
+  background-color: #fefefe;
 }
 
 th{
@@ -195,6 +195,7 @@ th{
 td {
   text-align: left;
   padding: 8px;
+  vertical-align: top;
 }
 
 /*.example::before {

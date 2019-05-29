@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   width: 100%;
   margin-bottom: 1rem;
-  display: inline-block;
+  display: flex;
   margin: 0;
   padding: 1em 0;
 }
@@ -17,6 +17,11 @@
   flex-basis: 100%;
   flex: 1;
 }
+
+/*div {
+  display: flex;
+  flex: 1;
+}*/
 
 .card-wrap {
   padding: 1em;
@@ -150,7 +155,7 @@ a.card-button:visited {
 
 /* MEDIA QUERIES ------------------------------------------------ */
 
-@media all and (min-width: 1000px) {
+/*@media all and (min-width: 1000px) {
   .wrapper {
     display: flex;
   }
@@ -159,3 +164,4 @@ a.card-button:visited {
     display: flex;
   }
 }
+*/
