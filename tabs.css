@@ -62,14 +62,14 @@ div {
 
 
 
-/* Style the tab */
+
 .tab {
   overflow: hidden;
 
 
 }
 
-/* Style the buttons that are used to open the tab content */
+
 .tab button {
   display: inline-block;
   padding: .7rem 1rem;
@@ -82,14 +82,14 @@ div {
   border: none;
 }
 
-/* Change background color of buttons on hover */
+
 .tab button:hover {
   color: #789;
   cursor: pointer;
 
 }
 
-/* Create an active/current tablink class */
+
 .tab button.active {
   background-color: #eee;
   color: #0af;
@@ -97,7 +97,7 @@ div {
 
 }
 
-/* Style the tab content */
+
 .tabcontent {
   display: none;
   padding: 6px 12px;
