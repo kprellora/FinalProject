@@ -49,7 +49,7 @@
 
 /*card colour for qps*/
 .qps {
-  background-color: #ebebe0;
+  background-color: #c6ecd9;
 }
 
 .card:hover {
@@ -121,7 +121,7 @@
 
 /*button colour for qps*/
 .qps-b{
-  background-color: #adad85;
+  background-color: #40bf80;
 }
 .card-button:hover {
   text-decoration: underline;
