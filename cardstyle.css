@@ -1,0 +1,161 @@
+/* CARD COMPONENT CSS ----------------------------------------------------*/
+
+/* mobile first, applies starting from 320px wide screens */
+
+.wrapper {
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: inline-block;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.flex-container {
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.card-wrap {
+  padding: 1em;
+}
+
+.card {
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0,0,0,.1), 0 0 2px rgba(0,0,0,.1);
+  /*display: flex;*/
+  flex-direction: column;
+  overflow: hidden;
+  transition: all .2s ease;
+  background-color: #ebc6c6;
+}
+
+/*Card colour for formal writing*/
+.fw{
+  background-color: #b3ecff;
+}
+
+/*card colour for inclusive writing*/
+.inlang {
+  background-color: #adebeb;
+}
+
+/*card colour for grammar and punctuation*/
+.grapunc {
+  background-color: #cce6ff;
+}
+
+/*card colour for qps*/
+.qps {
+  background-color: #c6ecd9;
+}
+
+.card:hover {
+  box-shadow: 0 10px 10px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.2);
+  transform: scale(1.05);
+  transform: translateZ(0);
+}
+
+.card-header {
+  background: linear-gradient(#e8f5f8, #feffff);
+  border: 1px solid #FFF;
+  border-radius: 6px 6px 0 0;
+  padding: 1em;
+}
+
+.material-icons {
+  color: #83d2d4;
+  display: none;
+}
+
+.title {
+  color: #17252a;
+  margin: 0;
+  text-align: center;
+}
+
+.card-main {
+  padding: 1em;
+  text-align: center;
+}
+
+.main-description p {
+  color: #404040;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+   /*align-items: center;*/
+}
+
+.card-footer {
+  display: flex;
+  padding: .4em;
+  flex-direction: column;
+  align-items: center;
+}
+
+span.card-button {
+  display: none;
+}
+
+.card-button {
+  width: 7rem;
+  display: block;
+  color: #eeeeee;
+  font-weight: 800;
+  transition: all .2s ease;
+  background-color: #bf4040;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.card-button:visited {
+  color: white;
+}
+
+/*button colour for Fomal Writing*/
+.fwb{
+  background-color: #00ace6;
+}
+
+/*button colour for inclusive language*/
+.inlang-b{
+  background-color: #2eb8b8;
+}
+
+/*button colour for grammar and inclusive language*/
+.grapunc-b{
+  background-color: #0077b3;
+}
+
+/*button colour for qps*/
+.qps-b{
+  background-color: #40bf80;
+}
+.card-button:hover {
+  text-decoration: underline;
+}
+
+.card-button:visited {
+  color: #068c9e;
+}
+
+
+
+/* MEDIA QUERIES ------------------------------------------------ */
+
+@media all and (min-width: 1000px) {
+  .wrapper {
+    display: flex;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+}
