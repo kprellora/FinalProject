@@ -8,6 +8,7 @@
       <link href="styles/fontawesome.css" rel="stylesheet">
       <link href="content.css" rel="stylesheet">
       <link href="tabs.css" rel="stylesheet">
+      <script src="tab.js"></script>
       <title>Formal Writing | Academic Writing</title>
    </head>
    <body>
@@ -20,7 +21,7 @@
          <h1 class="heading"><a href="index.html">Academic Writing </a><span class="arrow down"></span></h1>
       </header>
       <!-- Nav inspiration: https://css-tricks.com/sticky-smooth-active-nav/ -->
-      <nav id="nav-overlay" class="overlay sidebar">
+      <!-- <nav id="nav-overlay" class="overlay sidebar">
          <div onclick="closeNav()" class="header">
             <h2 class="heading">Academic Writing <span class="arrow up"></span></h2>
          </div>
@@ -63,7 +64,7 @@
                </ul>
             </li>
          </ul>
-      </nav>
+         </nav> -->
       <main>
          <section id="formal-writing">
             <h1>Formal Writing</h1>
@@ -86,19 +87,36 @@
                When you are reporting what you did, a passive voice is used to make sure that the language sounds impersonal.
                </strong>
             </p>
-            <p><em><strong>Instead of writing:</strong></em></p>
-            <p>I prepared all the laboratory equipment for the whole group. </p>
-            <p><em><strong>Write:</strong></em></p>
-            <p>The laboratory equipment for the chemistry experiment was prepared.</p>
+            <div class="tab">
+  <button class="tablinks" onclick="openText(event, 'instead1')">Instead of writing</button>
+  <button class="tablinks" onclick="openText(event, 'write1')">Write</button>
+
+</div>
+            <div id="instead1" class="tabcontent">
+                  <p>I prepared all the laboratory equipment for the whole group. </p>
+               </div>
+              <div id="write1" class="tabcontent">
+                  <p>The laboratory equipment for the chemistry experiment was prepared.</p>
+               </div>
+            </div>
             <p>
                <strong>
                When you are referring to what you have said, said, similar language applies. For example:
                </strong>
             </p>
-            <p><em><strong>Instead of writing:</strong></em></p>
-            <p>As I have already mentioned, Save the Children are leading the policy discussions on the establishment of Early Childhood Centres.</p>
-            <p><em><strong>Write:</strong></em></p>
-            <p>As previously mentioned, Save the Children are leading the policy discussions on the establishment of Early Childhood Centres.</p>
+            <div class="tab">
+  <button class="tablinks" onclick="openText(event, 'instead2')">Instead of writing</button>
+  <button class="tablinks" onclick="openText(event, 'write2')">Write</button>
+
+</div>
+            <div id="instead2" class="tabcontent">
+                  <p>As I have already mentioned, Save the Children are leading the policy discussions on the establishment of Early Childhood Centres.</p>
+               </div>
+               <div id="write2" class="tabcontent">
+                  <p>As previously mentioned, Save the Children are leading the policy discussions on the establishment of Early Childhood Centres.</p>
+               </div>
+             </div>
+            </div>
             <p>In each of these examples, we used the passive voice to make sure that the language sounds impersonal.</p>
             <p>
                <strong>
@@ -106,17 +124,33 @@
                </strong>
             </p>
             <p>use an impersonal form such as: It can be seen that...</p>
-            <p><em><strong>Instead of writing:</strong></em></p>
-            <p>When using this teaching methodology with children from non-literate homes, <u><em>you can easily see</em></u> why it will never be successful.</p>
-            <p><em><strong>Write:</strong></em></p>
-            <p>When using this teaching methodology with children from non-literate homes, <u><em>it can easily be seen</em></u> why it will never be successful.</p>
+            <div class="tab">
+  <button class="tablinks" onclick="openText(event, 'instead3')">Instead of writing</button>
+  <button class="tablinks" onclick="openText(event, 'write3')">Write</button>
+
+</div>
+            <div id="instead3" class="tabcontent">
+                  <p>When using this teaching methodology with children from non-literate homes, <u><em>you can easily see</em></u> why it will never be successful.</p>
+               </div>
+               <div id="write3" class="tabcontent">
+                  <p>When using this teaching methodology with children from non-literate homes, <u><em>it can easily be seen</em></u> why it will never be successful.</p>
+               </div>
+
             <p>
                <strong>When you want to use evidence to arrive at a conclusion you can also use similar language. For example:</strong>
             </p>
-            <p><em><strong>Instead of writing:</strong></em></p>
-            <p>We can see, after examining the students’ results, that children are much more likely to be successful in their first two years of school if they have benefitted from preschool activities that promote cognitive growth.</p>
-            <p><em><strong>Write:</strong></em></p>
-            <p>The students’ results show that children are much more likely to be successful in their first two years of school if they have benefitted from preschool activities that promote cognitive growth.</p>
+            <div class="tab">
+               <input id="tab7" type="radio" name="tabs" checked>
+               <label for="tab7">Instead of writing</label>
+               <input id="tab8" type="radio" name="tabs">
+               <label for="tab8">Write</label>
+               <div class="tab-example" id="content7">
+                  <p>We can see, after examining the students’ results, that children are much more likely to be successful in their first two years of school if they have benefitted from preschool activities that promote cognitive growth.</p>
+               </div>
+               <div class="tab-example" id="content8">
+                  <p>The students’ results show that children are much more likely to be successful in their first two years of school if they have benefitted from preschool activities that promote cognitive growth.</p>
+               </div>
+            </div>
          </section>
          <section id="judgements">
             <h3>Giving an opinion</h3>

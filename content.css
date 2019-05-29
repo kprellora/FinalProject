@@ -145,7 +145,10 @@ section:target {
   margin-top: -90px;
 }
 
-
+button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.0em
+}
 
 
 /* YouTube video ---------------------------------------------------- */
@@ -300,7 +303,7 @@ ol li::before {
 
     background-size: cover;
   }
- 
+
   header>h2 {
     font-size: 4rem;
     line-height: 1.75em;
