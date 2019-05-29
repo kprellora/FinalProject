@@ -2,7 +2,7 @@
 
 body{
   font-family: 'PT Sans', sans-serif;
-  background-color: #0099cc;
+  background-color: white;
   margin: 0;
   color: #ffffff;
   line-height: 1.6;
@@ -12,7 +12,7 @@ body{
 }
 
 h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /*Showcase Styling*/
@@ -41,13 +41,12 @@ h3{
 
 /*Description*/
 #description{
-  padding: 10rem 0;
+  font-size: 1.25rem;
+  padding: 4rem 0  7rem 0;
   color: #1a1a1a;
+  text-align: left;
 }
-/*Sections*/
-section {
-  padding: 20rem 0;
-}
+
 
 /*Navigation*/
 nav {
@@ -88,20 +87,18 @@ nav a#openup {
 }
 /*Utility Classes*/
 .container{
-  text-align: center;
+  /*text-align: center;*/
   margin: 0 auto;
-  padding: 5rem 3rem;
+  padding: 3rem 0;
   /*background: blue;*/
 }
 
 /*Section*/
-.section {
-  padding: 2rem 0;
-}
 
-.section-head{
-  font-size: 4rem;
+.section-head {
+  font-size: 2.5rem;
   margin: 0;
+  text-align: center;
 }
 
 .bg-colour1{
@@ -117,7 +114,7 @@ nav a#openup {
 }
 
 .bg-colour4{
-  background:  #ffffff;
+  background:  #0099cc;
 }
 /*
 .lead{
@@ -139,5 +136,9 @@ nav a#openup {
 
    #showcase h2 {
      /*font-size: 2rem;*/
+   }
+
+   .container {
+      margin: 0 3rem;
    }
  }

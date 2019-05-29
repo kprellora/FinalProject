@@ -25,13 +25,12 @@
 .card {
   border-radius: 6px;
   box-shadow: 0 4px 4px rgba(0,0,0,.1), 0 0 2px rgba(0,0,0,.1);
+  /*display: flex;*/
   flex-direction: column;
   overflow: hidden;
   transition: all .2s ease;
   background-color: #ebc6c6;
 }
-
-
 
 /*Card colour for formal writing*/
 .fw{
@@ -85,7 +84,9 @@
 .main-description p {
   color: #404040;
   margin: 0;
+  display: flex;
   flex-direction: column;
+   /*align-items: center;*/
 }
 
 .card-footer {
@@ -100,7 +101,7 @@ span.card-button {
 }
 
 .card-button {
-  width: 10rem;
+  width: 7rem;
   display: block;
   color: #eeeeee;
   font-weight: 800;
@@ -108,16 +109,14 @@ span.card-button {
   background-color: #bf4040;
   border-radius: 6px;
   padding: 1rem;
-  margin: 1rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
   text-decoration: none;
+  text-align: center;
 }
 
 a.card-button:visited {
   color: white;
-}
-
-a.card-button:hover {
-
 }
 
 /*button colour for Fomal Writing*/
@@ -140,7 +139,7 @@ a.card-button:hover {
   background-color: #40bf80;
 }
 .card-button:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .card-button:visited {
