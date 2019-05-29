@@ -213,7 +213,7 @@ td {
 main .example {
   position: relative;
   padding: 1em;
-  margin: 1.5rem 10% 3rem 10%;
+  margin: 3rem 15% 3rem 15%;
   width: auto;
 }
 
@@ -241,9 +241,9 @@ ol {
   counter-reset: my-counter;
   padding-inline-start: 0;
   background-color: darkcyan;
-  margin: 0;
+  margin: 1.5rem 10% 3rem 10%;
   padding: 0;
-  border-radius: 5px;
+  border-radius: 3px;
 
 }
 ol li {
@@ -267,12 +267,6 @@ ol li::before {
   border-radius: 5px;
   margin-right: .25em;
 }
-
-
-/* TABS ===============================================================*/
-
-
-
 
 /* MEDIA QUERIES ==================================================== */
 
