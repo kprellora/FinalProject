@@ -1,49 +1,3 @@
- /*Navigation*/
-nav {
-  width: 100%;
-  background-color: #333;
-  color: #eee;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-nav li {
-  display: inline-block;
-  float: left;
-  width: 20%;
-}
-nav a {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  padding: 1rem;
-  color: #eee;
-  text-decoration: none;
-}
-nav li:hover {
-  background-color: #444;
-}
-nav a#openup {
-  display: none;
-}
-
-.right-allign{
-  text-align: right;
-}
-
-/*nav ul li a {
-  display: none;
-}
-*/
-
-
-
-
-
  /* Mobile first */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
@@ -72,7 +26,6 @@ header, div.header {
 
 main {
   padding: 1rem 1rem 10rem 1rem;
-  margin-top: 5em;
 }
 
 section {
@@ -107,7 +60,59 @@ footer {
 
 /* mobile nav inspired by
 https://www.uts.edu.au/current-students/support/helps/self-help-resources/academic-writing */
+nav {
+  background-color: #211545;
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: 0.2s;
+}
 
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Indent without moving the background-color position */
+nav ul li .nav-level1 {
+  padding-left: 2rem;
+}
+
+nav ul li a.nav-level2 {
+  padding-left: 3.5rem;
+}
+
+nav ul li a.nav-level4 {
+  padding-left: 6.5rem;
+}
+
+nav ul li a:not(nav-level1):not(nav-level2):not(nav-level4) {
+  text-decoration: none;
+  display: block;
+  padding-left: 5rem;
+  padding-right: 3rem;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.current {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+nav>ul>li:not(:first-child) {
+  margin-top: 1rem;
+}
 
 header>h2>a {
   color: white;
@@ -318,13 +323,133 @@ ol li::before {
     grid-row: 3/4;
   }
 
-  
-/* NAV */
+  nav {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: inline-block;
+    white-space: nowrap;
+    background-color: white;
+    width: auto;
+    height: initial !important;
+    overflow: initial;
+    /*position: static;*/
+    margin-top: 5rem;
+  }
+
+  /*Back to top button*/
+  #back-to-top-btn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 26px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #333333;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid #333333;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-colour, color;
+  }
+
+  #back-to-top-btn:hover, #back-to-top-btn:focus{
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  .btnEntrance{
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+  }
+
+  /*FadeInUp*/
+  @keyframes btnEntrance {
+    from{
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    to{
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .btnExit{
+    animation-duration: 0.25s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+  }
+
+  /*FadeOutDown*/
+  @keyframes btnExit {
+    from{
+      opacity: 1;
+    }
+    to{
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+  .fas{
+      -moz-osx-font-smoothing:grayscale;
+      -webkit-font-smoothing:antialiased;
+      display:inline-block;
+      font-style:normal;
+      font-variant:normal;
+      text-rendering:auto;
+      line-height:1;
+      font-family:"Font Awesome 5 Free";
+      font-weight:900;
+  }
 
 
+  .fa-angle-double-up:before {content:"\f102"}
 
 
+  /*.fa-search:before {content:"\f002"}*/
 
+
+  /* Only stick if you can fit */
+  @media (min-height: 300px) {
+    nav ul {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  nav ul li a:not(nav-subheading) {
+    color: black;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+
+  nav ul li a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  nav ul li a:hover {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+
+  nav ul li a.current {
+    background: #404040;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
   section:target {
     padding-top: 1rem;
