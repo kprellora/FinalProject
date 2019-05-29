@@ -58,9 +58,57 @@ footer {
   color: white;
 }
 
+
+/*Navigation*/
+nav {
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline-block;
+  float: left;
+  width: 20%;
+}
+nav a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  color: #eee;
+  text-decoration: none;
+}
+nav li:hover {
+  background-color: #444;
+}
+nav a#openup {
+  display: none;
+}
+
+.right-allign{
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* mobile nav inspired by
 https://www.uts.edu.au/current-students/support/helps/self-help-resources/academic-writing */
-nav {
+/*nav {
   background-color: #211545;
   height: 0%;
   width: 100%;
@@ -77,7 +125,6 @@ nav ul {
   padding: 0;
 }
 
-/* Indent without moving the background-color position */
 nav ul li .nav-level1 {
   padding-left: 2rem;
 }
@@ -112,7 +159,7 @@ nav ul li a.current {
 
 nav>ul>li:not(:first-child) {
   margin-top: 1rem;
-}
+}*/
 
 header>h2>a {
   color: white;
@@ -323,7 +370,7 @@ ol li::before {
     grid-row: 3/4;
   }
 
-  nav {
+/*  nav {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: inline-block;
@@ -332,9 +379,8 @@ ol li::before {
     width: auto;
     height: initial !important;
     overflow: initial;
-    /*position: static;*/
     margin-top: 5rem;
-  }
+  }*/
 
   /*Back to top button*/
   #back-to-top-btn{
@@ -416,7 +462,7 @@ ol li::before {
 
 
   /* Only stick if you can fit */
-  @media (min-height: 300px) {
+  /*@media (min-height: 300px) {
     nav ul {
       position: sticky;
       top: 0;
@@ -449,7 +495,7 @@ ol li::before {
     background: #404040;
     text-decoration: none;
     font-weight: bold;
-  }
+  }*/
 
   section:target {
     padding-top: 1rem;
