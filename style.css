@@ -14,6 +14,10 @@ h3{
   font-size: 1.5rem;
 }
 
+.section-head{
+  color: #ffffff;
+  padding-bottom: 30px;
+}
 /*Showcase Styling*/
 #showcase{
   margin: 0;
