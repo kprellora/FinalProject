@@ -14,6 +14,13 @@ h3{
   font-size: 1.5rem;
 }
 
+
+.section-head{
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+
 /*Showcase Styling*/
 #showcase{
   margin: 0;
@@ -46,6 +53,25 @@ h3{
   text-align: left;
 }
 
+/*Container size for formal writing*/
+.fw-size, inlang-size{
+  padding: 150px;
+}
+
+/*Container size for inclusive language*/
+.inlang-size{
+  padding: 150px;
+}
+
+/*Container size for grammar and punctutaion*/
+.granpunc-size{
+  padding: 150px;
+}
+
+/*Container size for qps*/
+.qps-size{
+  padding: 150px;
+}
 
 /*Navigation*/
 nav {
@@ -102,6 +128,7 @@ nav a#openup {
   font-size: 2.5rem;
   margin: 0;
   text-align: center;
+  font-size: 5rem;
 }
 
 .bg-colour1{
