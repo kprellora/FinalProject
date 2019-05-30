@@ -46,6 +46,25 @@ h3{
   text-align: left;
 }
 
+/*Container size for formal writing*/
+.fw-size, inlang-size{
+  padding: 150px;
+}
+
+/*Container size for inclusive language*/
+.inlang-size{
+  padding: 150px;
+}
+
+/*Container size for grammar and punctutaion*/
+.granpunc-size{
+  padding: 150px;
+}
+
+/*Container size for qps*/
+.qps-size{
+  padding: 150px;
+}
 
 /*Navigation*/
 nav {
