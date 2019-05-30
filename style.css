@@ -132,7 +132,7 @@ h2.heading {
   top: 0;
   left: 0;
   z-index: 1;
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 0;
 }
 
@@ -171,15 +171,6 @@ h2.heading {
   text-decoration: underline;
 }
 
-nav>ul>li:not(:first-child) {
-  margin-top: 1rem;
-}
-
-/*header>h2>a {
-  color: white;
-  text-decoration: none;
-}*/
-
 
 .arrow {
   position: absolute;
@@ -205,8 +196,6 @@ section:target {
   padding-top: 90px;
   margin-top: -90px;
 }
-
-
 
 
 
@@ -251,7 +240,7 @@ section:target {
 .lead{
   font-size: 1.3rem;
 }*/
- @media screen and (min-width: 800px){
+ @media all and (min-width: 800px){
   nav.top-nav {
     display: flex;
   }
@@ -285,5 +274,8 @@ section:target {
    /*Container size for formal writing*/
    .fw-size, .inlang-size, .granpunc-size, .qps-size {
      padding: 5rem;
+   }
+   h2.heading h2.top {
+    color: pink;
    }
  }
