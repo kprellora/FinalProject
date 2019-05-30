@@ -13,6 +13,7 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   color: black;
+  line-height: 1.75rem;
 }
 
 header, div.header {
@@ -149,13 +150,10 @@ div.sidebar ul li .nav-level1 {
   padding-left: 2rem;
 }
 
-div.sidebar ul li a.nav-level2 {
+div.sidebar ul li a:not(.nav-level1) {
   padding-left: 3.5rem;
 }
 
-div.sidebar ul li a.nav-level4 {
-  padding-left: 6.5rem;
-}
 
 div.sidebar ul li a:not(nav-level1):not(nav-level2):not(nav-level4) {
   text-decoration: none;
@@ -346,6 +344,9 @@ ol li::before {
   border-radius: 5px;
   margin-right: .25em;
 }
+
+ul li { background: green; }
+ul li:nth-child(odd) { background: red; }
 
 /* MEDIA QUERIES ==================================================== */
 
