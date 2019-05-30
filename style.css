@@ -256,7 +256,7 @@ section:target {
    }
 
    #showcase h1{
-     font-size: 3rem;
+     font-size: 8rem;
      margin: 0;
      text-shadow: 5px 5px #222;
 
@@ -269,6 +269,10 @@ section:target {
 
    .container {
       margin: 3rem;
+   }
+
+   .section-head {
+     font-size: 5rem;
    }
 
    /*Container size for formal writing*/
