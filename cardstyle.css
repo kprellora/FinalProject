@@ -68,7 +68,7 @@
   border: 1px solid #FFF;
   border-radius: 6px 6px 0 0;
   padding: 1em;
-  height: 4rem;
+  /*height: 4rem;*/
 }
 
 .material-icons {
@@ -92,8 +92,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-   /*align-items: center;*/
-    height: 5rem;
+    /*height: 5rem;*/
 }
 
 .card-footer {
@@ -157,7 +156,7 @@ a.card-button:visited {
 
 /* MEDIA QUERIES ------------------------------------------------ */
 
-/*@media all and (min-width: 1000px) {
+@media all and (min-width: 800px) {
   .wrapper {
     display: flex;
   }
@@ -165,5 +164,13 @@ a.card-button:visited {
   .flex-container {
     display: flex;
   }
+
+  .card-header {
+    height: 4rem;
+  }
+
+  .main-description p {
+      height: 5rem;
+  }
 }
-*/
+

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body{
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: white;
   margin: 0;
   line-height: 1.6;
@@ -15,17 +15,11 @@ h3{
 }
 
 
-.section-head{
-  color: #ffffff;
-  padding-bottom: 30px;
-}
-
-
 /*Showcase Styling*/
 #showcase{
   margin: 0;
   padding: 0;
-  background: url('images/AcaWriting.jpeg') no-repeat center/cover;
+  background: url('images/image.jpg') no-repeat center/cover;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -37,12 +31,13 @@ h3{
 }
 
 #showcase h1{
-  /*font-size: 6rem;*/
-  margin-bottom: 0;
+  font-size: 4rem;
+  margin: 0;
+  text-shadow: 5px 5px #222;
 }
 
-#showcase h2{
-  /*font-size: 4rem;*/
+h2.intro {
+  color: black;
 }
 
 /*Description*/
@@ -56,46 +51,79 @@ h3{
 
 /*Container size for formal writing*/
 .fw-size, .inlang-size, .granpunc-size, .qps-size {
-  padding: 5rem;
+  padding: 1.5rem;
 }
 
 
-/*Navigation*/
-nav {
-  width: 100%;
-  background-color: #333;
-  color: #eee;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-nav li {
-  display: inline-block;
-  float: left;
-  width: 20%;
-}
-nav a {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  padding: 1rem;
-  color: #eee;
-  text-decoration: none;
-}
-nav li:hover {
-  background-color: #444;
-}
-nav a#openup {
+/* Navigation */
+nav.top-nav {
   display: none;
 }
 
-.right-allign{
-  text-align: right;
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+h2 {
+  color: white;
+  text-decoration: none;
+}
+
+.top-nav {
+  display: none;
+}
+
+nav h1.logo {
+  margin: 0;
+  font-size: 1.45em;
+  padding: 0 1em;
+}
+
+
+.logo a, .main-nav a {
+  text-align: center;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav a {
+  color: white;
+  font-size: 1em;
+  padding: 1.5em;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover {
+  background-color: #222;
+  font-weight: bold;
+  border-bottom: 2px #ddd solid;
+}
+
+.logo:hover {
+  font-weight: bold;
+}
+
+.top-nav {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.top-nav, .main-nav {
+  display: flex;
+}
+
+
 /*Footer*/
 #footer{
   padding: 5rem 0;
@@ -110,12 +138,12 @@ nav a#openup {
 }
 
 /*Section*/
-
 .section-head {
   font-size: 2.5rem;
   margin: 0;
   text-align: center;
-  font-size: 5rem;
+  color: #ffffff;
+  padding-bottom: 2rem;
 }
 
 .bg-colour1{
@@ -138,6 +166,11 @@ nav a#openup {
   font-size: 1.3rem;
 }*/
  @media screen and (min-width: 800px){
+  nav.top-nav {
+    display: flex;
+  }
+
+
   #showcase {
      width: 100%;
      height: 100vh;
@@ -147,15 +180,24 @@ nav a#openup {
      margin-top: 35vh;
    }
 
-   #showcase h1 {
-     /*font-size: 6rem;*/
+   #showcase h1{
+     font-size: 3rem;
+     margin: 0;
+     text-shadow: 5px 5px #222;
+
    }
+
 
    #showcase h2 {
      /*font-size: 2rem;*/
    }
 
    .container {
-      margin: 0 3rem;
+      margin: 3rem;
+   }
+
+   /*Container size for formal writing*/
+   .fw-size, .inlang-size, .granpunc-size, .qps-size {
+     padding: 5rem;
    }
  }
