@@ -48,7 +48,8 @@ h3{
 /*Description*/
 #description{
   font-size: 1.25rem;
-  padding: 4rem 1 7rem 1;
+  padding: 20px;
+  padding-bottom: 30px;
   color: #1a1a1a;
   text-align: left;
 }

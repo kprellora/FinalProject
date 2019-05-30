@@ -345,11 +345,8 @@ ol li::before {
   margin-right: .25em;
 }
 
-.example ul {
-  padding: 1rem;
-}
-.example ul li { background: green; }
-.example ul li:nth-child(odd) { background: red; }
+/* ul li { background: green; }
+ul li:nth-child(odd) { background: red; } */
 
 /* MEDIA QUERIES ==================================================== */
 
