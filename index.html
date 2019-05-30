@@ -9,10 +9,12 @@
     <title>Academic Writing</title>
   </head>
   <body>
-
+    <header>
+      <h1 class="logo"><a href="#">Academic Writing</a><span id="toggle" class="arrow down" onclick="openNav()"></span></h1>
+    </header>
 <!-- Welcome Page-->
-    <nav>
-      <h1 class="logo"><a href="#">Academic Writing</a></h1>
+    <nav id="nav-overlay" class="overlay sidebar">
+      <h1 class="logo"><a href="#">Academic Writing</a><span id="toggle" class="arrow down" onclick="openNav()"></span></h1>
       <ul class="main-nav">
         <li><a href='formal_writing.html'>Formal Writing</a></li>
         <li><a href='inclusive_language.html'>Inclusive Language </a></li>
@@ -293,6 +295,7 @@
     </div>
   </div>
 </section>
+  <script src="scripts/nav.js"></script>
 
   </body>
 </html>

@@ -2,10 +2,17 @@
 
 function openNav() {
   document.getElementById("nav-overlay").style.height = "100%";
+  document.getElementById("toggle").classList.add('up');
+  document.getElementById("toggle").classList.remove('down');
+  document.getElementById("toggle").setAttribute("onClick", "closeNav()");
+  document.getElementsByClassName("main-nav").style.display = "flex";
 };
 
 function closeNav() {
   document.getElementById("nav-overlay").style.height = "0%";
+  document.getElementById("toggle").classList.add('down');
+  document.getElementById("toggle").classList.remove('up');
+  document.getElementById("toggle").setAttribute("onClick", "openNav()");
 };
 
 
