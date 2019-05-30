@@ -345,8 +345,8 @@ ol li::before {
   margin-right: .25em;
 }
 
-ul li { background: green; }
-ul li:nth-child(odd) { background: red; }
+/* ul li { background: green; }
+ul li:nth-child(odd) { background: red; } */
 
 /* MEDIA QUERIES ==================================================== */
 
