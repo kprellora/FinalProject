@@ -15,26 +15,26 @@
 
       <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
 
-      <!-- Desktop Nav -->
-      <nav class="top-nav">
-        <h1 class="logo"><a href="index.html">Academic Writing</a></h1>
-          <ul class="main-nav">
-            <li><a href='formal_writing.html'>Formal Writing</a></li>
-            <li><a href='inclusive_language.html'>Inclusive Language </a></li>
-            <li><a href='grammar_punctuation.html'>Grammar and Punctuation</a></li>
-            <li><a href='qps.html'>Quoting, Paraphrasing and Summarising</a></li>
-          </ul>
-      </nav>
+      <h2 class="heading" onclick="openNav()">Academic Writing <span id="toggle" class="arrow down"></span></h2>
+          <nav id="nav-overlay" class="overlay sidebar">
+              <h2 class="heading" onclick="closeNav()">Academic Writing <span id="toggle" class="arrow up"></span></h2>
+            <ul>
+              <li><a onclick="closeNav()" class="nav-level1" href="inclusive_language.html">Inlcusive Language</a></li>
+              <li><a onclick="closeNav()" class="nav-level1" href="formal_writing.html">Formal Writing</a></li>
+              <li><a onclick="closeNav()" class="nav-level1" href="grammar_punctuation.html">Grammar and Punctuation</a></li>
+              <li><a onclick="closeNav()" class="nav-level1" href="qps.html">Quoting, Paraphrasing and Summarising</a></li>
+            </ul>
+          </nav>
 
-      <div class="sidebar">
-        <ul>
-          <p>In this section:</p>
-          <li><a class="nav-level1" href="#qps">Introduction</a></li>
-          <li><a class="nav-level1" href="#quoting">Quoting</a></li>
-          <li><a class="nav-level1" href="#paraphrasing">Paraphrasing</a></li>
-          <li><a class="nav-level1" href="#summarising">Summarising</a></li>
-        </ul>
-      </div>
+          <nav class="top-nav">
+            <h1 class="logo"><a href="index.html">Academic Writing</a></h1>
+            <ul class="main-nav">
+              <li><a href='formal_writing.html'>Formal Writing</a></li>
+              <li><a href='inclusive_language.html'>Inclusive Language </a></li>
+              <li><a href='grammar_punctuation.html'>Grammar and Punctuation</a></li>
+              <li><a href='qps.html'>Quoting, Paraphrasing and Summarising</a></li>
+            </ul>
+          </nav>
 
 
       <main>
