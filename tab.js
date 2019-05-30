@@ -1,21 +1,26 @@
 function openText(evt, cityName) {
   var i, tabcontent, tablinks;
-
-
-  tabcontent = document.getElementsByClassName("tabcontent");
+  var parent = evt.target.parentNode.parentNode.className;
+  console.log(parent);
+  tabcontent = document.querySelectorAll("." + parent + " .tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+      tabcontent[i].style.display = "none";
   }
-
-
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.querySelectorAll("." + parent + " .tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
+//    document.getElementById(cityName).style.display = "block";
 
 
-  document.getElementById(cityName).style.display = "block";
+  document.querySelector("." + parent +" #" + cityName).style.display = "block";
+//    console.log(this)
   evt.currentTarget.className += " active";
 }
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen1").click();
+document.getElementById("defaultOpen2").click();
+document.getElementById("defaultOpen3").click();
+document.getElementById("defaultOpen4").click();
 //help from https://www.w3schools.com/howto/howto_js_tabs.asp
