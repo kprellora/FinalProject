@@ -96,7 +96,7 @@ nav h1.logo {
 .main-nav a {
   color: white;
   font-size: 1em;
-  padding: 1em 1.5em;
+  padding: 1.5em;
 }
 
 .main-nav a:hover {
@@ -125,56 +125,70 @@ nav h1.logo {
 
 /* mobile nav inspired by
 https://www.uts.edu.au/current-students/support/helps/self-help-resources/academic-writing */
-/*nav {
-  background-color: #211545;
-  height: 0%;
-  width: 100%;
+.sidebar {
+    display: none;
+  }
+
+div.sidebar {
+  background-color: #efefef;
   position: fixed;
   overflow: auto;
-  top: 0;
-  left: 0;
+  top: 10rem;
+  left: 2rem;
   z-index: 1;
   transition: 0.2s;
+
 }
 
-nav ul {
+div.sidebar ul {
   list-style: none;
   padding: 0;
 }
 
-nav ul li .nav-level1 {
+div.sidebar ul li .nav-level1 {
   padding-left: 2rem;
 }
 
-nav ul li a.nav-level2 {
+div.sidebar ul li a.nav-level2 {
   padding-left: 3.5rem;
 }
 
-nav ul li a.nav-level4 {
+div.sidebar ul li a.nav-level4 {
   padding-left: 6.5rem;
 }
 
-nav ul li a:not(nav-level1):not(nav-level2):not(nav-level4) {
+div.sidebar ul li a:not(nav-level1):not(nav-level2):not(nav-level4) {
   text-decoration: none;
   display: block;
   padding-left: 5rem;
-  padding-right: 3rem;
 }
 
-nav ul li a {
-  display: inline-block;
+div.sidebar ul li a {
+  display: block;
   padding: 0.5rem 2rem;
-  color: white;
+  color: #333;
   text-decoration: none;
 }
+div.sidebar ul li a:hover {
+  color: white;
+  background-color: #222;
+}
 
-nav ul li a.current {
+div.sidebar ul li a.current {
   color: white;
   font-weight: bold;
   text-decoration: underline;
 }
 
-nav>ul>li:not(:first-child) {
+.sidebar p {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  /*background-color: white; */
+  padding: .5rem .5rem 0 1rem;
+}
+
+/*nav>ul>li:not(:first-child) {
   margin-top: 1rem;
 }*/
 
@@ -203,10 +217,10 @@ header>h2>a {
   transform: rotate(-135deg);
 }
 
-section:target {
-  padding-top: 90px;
-  margin-top: -90px;
-}
+/*section:target {
+  padding-top: 500em;
+  margin-top: -500em;
+}*/
 
 button {
   font-family: 'Open Sans', sans-serif;
@@ -278,7 +292,7 @@ td {
 main .example {
   position: relative;
   padding: 1em;
-  margin: 3rem 15% 3rem 15%;
+  margin: 3rem 5% 3rem 5%;
   width: auto;
 }
 
@@ -306,7 +320,7 @@ ol {
   counter-reset: my-counter;
   padding-inline-start: 0;
   background-color: darkcyan;
-  margin: 1.5rem 10% 3rem 10%;
+  margin: 1.5rem 5% 3rem 5%;
   padding: 0;
   border-radius: 3px;
 
@@ -532,6 +546,18 @@ ol li::before {
   }
   .example {
    width: 70%;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  main .example {
+    margin: 3rem 15% 3rem 15%;
+  }
+
+  ol {
+    margin: 1.5rem 10% 3rem 10%;
   }
 
 }
