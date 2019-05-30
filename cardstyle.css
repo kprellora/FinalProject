@@ -68,6 +68,7 @@
   border: 1px solid #FFF;
   border-radius: 6px 6px 0 0;
   padding: 1em;
+  height: 4rem;
 }
 
 .material-icons {
@@ -92,6 +93,7 @@
   display: flex;
   flex-direction: column;
    /*align-items: center;*/
+    height: 5rem;
 }
 
 .card-footer {
