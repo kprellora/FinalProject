@@ -27,6 +27,7 @@ header, div.header {
 
 main {
   padding: 1rem 1rem 10rem 1rem;
+  margin-top: 5rem;
 }
 
 section {
@@ -35,8 +36,6 @@ section {
 
 main>section>h1 {
   font-size: 2em;
-  /*background-color: pink;*/
-  border-top: 2px solid black;
   font-weight: bold;
 }
 
@@ -59,49 +58,66 @@ footer {
   color: white;
 }
 
+a {
+  color: black;
+}
 
 /*Navigation*/
-nav {
-  width: 100%;
-  background-color: #333;
-  color: #eee;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-nav ul {
-  padding: 0;
+
+
+ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
-nav li {
-  display: inline-block;
-  float: left;
-  width: 20%;
-}
-nav a {
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  padding: 1rem;
-  color: #eee;
+
+h2 {
+  color: white;
   text-decoration: none;
 }
-nav li:hover {
-  background-color: #444;
-}
-nav a#openup {
+
+.top-nav {
   display: none;
 }
 
-.right-allign{
-  text-align: right;
+nav h1.logo {
+  margin: 0;
+  font-size: 1.45em;
+  padding: 0 1em;
 }
 
+.logo a, .main-nav a {
+  text-align: center;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
 
+.main-nav a {
+  color: white;
+  font-size: 1em;
+  padding: 1em 1.5em;
+}
 
+.main-nav a:hover {
+  background-color: #444;
+}
 
+.top-nav {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
 
-
+.top-nav, .main-nav {
+  display: flex;
+}
 
 
 
