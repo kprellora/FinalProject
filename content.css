@@ -115,6 +115,7 @@ section {
 main>section>h1 {
   font-size: 2em;
   font-weight: bold;
+  line-height: 3rem ;
 }
 
 h2:not(.heading), h3, h4 {
