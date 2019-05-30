@@ -5,7 +5,6 @@ function openNav() {
   document.getElementById("toggle").classList.add('up');
   document.getElementById("toggle").classList.remove('down');
   document.getElementById("toggle").setAttribute("onClick", "closeNav()");
-  document.getElementsByClassName("main-nav").style.display = "flex";
 };
 
 function closeNav() {
