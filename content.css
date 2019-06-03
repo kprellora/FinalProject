@@ -15,7 +15,7 @@ body {
   color: black;
   line-height: 1.75rem;
   width: 100%;
-  font-size: 100%;
+  font-size: 90%;
 }
 
 /*Back to top button*/
@@ -498,6 +498,7 @@ ul li:nth-child(odd) { background: red; } */
 
 @media all and (min-width: 800px) {
   body {
+    font-size: 100%;
     display: grid;
     grid-template-columns: 25% 1fr 20%;
     grid-template-rows: min-content 1fr min-content;
