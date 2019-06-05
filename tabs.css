@@ -14,7 +14,7 @@ html {
   text-align: center;
   color: #abc;
   width: 39%;
-  margin-right: 2em;
+  margin-right: -1em;
   background-color: whitesmoke;
   border: none;
 }
@@ -33,5 +33,5 @@ html {
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
-  width: 706px;
+  width: 658px;
 }
