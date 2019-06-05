@@ -1,4 +1,4 @@
-function openText(evt, cityName) {
+function openText(evt, tabName) {
   var i, tabcontent, tablinks;
   var parent = evt.target.parentNode.parentNode.className;
   console.log(parent);
@@ -10,10 +10,10 @@ function openText(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-//    document.getElementById(cityName).style.display = "block";
+//    document.getElementById(tabName).style.display = "block";
 
 
-  document.querySelector("." + parent +" #" + cityName).style.display = "block";
+  document.querySelector("." + parent +" #" + tabName).style.display = "block";
 //    console.log(this)
   evt.currentTarget.className += " active";
 }
