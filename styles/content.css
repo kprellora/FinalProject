@@ -27,8 +27,8 @@ header, div.header {
 }
 
 main {
-  padding: 1rem 1rem 10rem 1rem;
-  /*margin-top: 5rem;*/
+  padding: 1rem;
+  margin-bottom: 10rem;
 }
 
 section {
@@ -50,9 +50,7 @@ h2:not(.heading), h3 {
   padding: .5em 0;
 }
 
-h3{
-  font-size: 1.5rem;
-}
+
 
 p {
     line-height: 1.75em;
@@ -307,29 +305,30 @@ section:target {
 /* TABLES -------------------------------------------------- */
 
 table {
+  table-layout: fixed;
   border-collapse: collapse;
   border-collapse: collapse;
   border: 1px solid black;
-  padding-left: 10px;
   margin-left:auto; 
   margin-right:auto;
 }
 
 tr:nth-child(even) {
-  background-color: #fefefe;
+  background-color: #eee;
 }
 
 th {
   text-align: left;
-  padding: 8px;
-  background-color: paleturquoise;
-  color: #000000;
+  background-color: teal;
+  color: white;
+  padding: .5rem;
 }
 
 td {
   text-align: left;
-  padding: 8px;
   vertical-align: top;
+  border-right: 1px solid black;
+  padding: .5rem;
 }
 
 
@@ -401,9 +400,21 @@ ol.content li::before {
   margin-top: .2rem;
 }
 
-/* ul li { background: green; }
-ul li:nth-child(odd) { background: red; } */
+ul.content li {
+    display: inline-block;
+  background: paleturquoise;
+  padding: 0.5rem;
+}
 
+ul.content li:nth-child(odd) {
+  background: lightblue;
+  margin: 1rem 1rem 1rem 2rem;
+
+} 
+
+ul.normal-list li {
+  list-style: disc;
+}
 
 
 /* BACK TO TOP BUTTON -------------------------------------------------- */
@@ -646,18 +657,11 @@ ul li:nth-child(odd) { background: red; } */
   }
 
   table {
-    width: 60%;
-  }
-  .example {
-   width: 70%;
+    width: 100%;
   }
 
-  main .example {
-    margin: 3rem 15% 3rem 15%;
-  }
-
-  ol {
-    margin: 1.5rem 10% 3rem 10%;
+  main .example, ol {
+    margin: 1rem 5% 1rem 5%;
   }
 
   nav.top-nav {
@@ -722,14 +726,14 @@ ul li:nth-child(odd) { background: red; } */
     font-style: italic;
   }
 
-  section:target:not(:first-child) {
+  section:target {
     padding-top: 5rem; 
     margin-top: 0;
   }
-
+/*
   ol.content {
     margin: 1.5rem 15% 3rem 15%;
-  }
+  }*/
   
 
 }
