@@ -248,6 +248,18 @@ section:target {
     padding-left: 4rem;
   }
 
+  .sidebar .nav-level2 {
+    font-size: 90%;
+    font-style: italic;
+    color: #111;
+  }
+
+  .sidebar .nav-level3 {
+    font-size: 80%;
+    font-style: oblique;
+    color: #222;
+  }
+
   .sidebar ul li a:not(nav-level1):not(nav-level2) {
     text-decoration: none;
     display: block;
@@ -257,9 +269,17 @@ section:target {
 
   .sidebar ul li a {
     display: inline-block;
-    padding: 0.25rem 2rem;
+    padding: 0 2rem;
     color: white;
     text-decoration: none;
+  }
+
+  .sidebar .nav-level2:before {
+    content: '- ';
+  }
+
+  .sidebar .nav-level3:before {
+    content: '> ';
   }
 
   .sidebar ul li a.current {
@@ -401,16 +421,21 @@ ol.content li::before {
 }
 
 ul.content li {
-    display: inline-block;
+  display: inline-block;
   background: paleturquoise;
   padding: 0.5rem;
+  margin: 1rem;
 }
 
 ul.content li:nth-child(odd) {
   background: lightblue;
-  margin: 1rem 1rem 1rem 2rem;
-
+  margin:  0 0 0 2rem;
 } 
+
+ul.content li:nth-child(3) {
+  margin: 0 0 0 4rem;
+} 
+
 
 ul.normal-list li {
   list-style: disc;
@@ -721,10 +746,10 @@ ul.normal-list li {
     margin: 1rem;
   }
 
-  .sidebar ul li ul li a {
+/*  .sidebar ul li ul li a {
     font-size: 90%;
     font-style: italic;
-  }
+  }*/
 
   section:target {
     padding-top: 5rem; 
