@@ -66,6 +66,7 @@ footer {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 button {
@@ -114,8 +115,8 @@ h2 {
   border-bottom: 2px solid transparent;
 }
 
-.main-nav a:hover {
-  background-color: #222;
+.main-nav a:hover, a.selected {
+  background-color: black;
   font-weight: bold;
   border-bottom: 2px #ddd solid;
 }
@@ -139,6 +140,7 @@ h2 {
 .top-nav, .main-nav {
   display: flex;
 }
+
 
 /* OVERLAY NAVIGATION MENU --------------------------------------------------*/
 h2.heading {
@@ -213,27 +215,94 @@ section:target {
   margin-top: -90px;
 }
 
+/* SIDEBAR --------------------------------------------------*/
+  .sidebar {
+    display: none;
+  }
 
-/* YOUTUBE VIDEOS -------------------------------------------------- */
-.iframe-container {
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
+  .sidebar {
+    background-color: #fefefe;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.2s;
+  }
+
+  /*nav h2 {
+    color: white;
+  }*/
+
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* Indent without moving the background-color position */
+  .sidebar ul li a.nav-level1 {
+    padding-left: 3rem;
+  }
+
+  .sidebar ul li a.nav-level2 {
+    padding-left: 4rem;
+  }
+
+  .sidebar ul li a:not(nav-level1):not(nav-level2) {
+    text-decoration: none;
+    display: block;
+    padding-left: 5rem;
+    padding-right: 3rem;
+  }
+
+  .sidebar ul li a {
+    display: inline-block;
+    padding: 0.25rem 2rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  .sidebar ul li a.current {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  
+
+/*  .sidebar>ul>li:not(:first-child) {
+    margin-top: 1rem;
+  }*/
+
+.arrow {
+  position: absolute;
+  right: 1.25em;
+  border: solid white;
+  border-width: 0 .13em .13em 0;
+  display: inline-block;
+  padding: .3em;
+  color: white;
+  margin: .2em;
 }
 
-.iframe-container iframe {
-   border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;
+.down {
+  transform: rotate(45deg);
 }
 
-/* 4x3 Aspect Ratio */
-.iframe-container-4x3 {
-  padding-top: 75%;
+.up {
+  transform: rotate(-135deg);
 }
+
+section:target {
+  padding-top: 90px; 
+  margin-top: -90px;
+}
+
+
+
+
 
 /* TABLES -------------------------------------------------- */
 
@@ -242,6 +311,8 @@ table {
   border-collapse: collapse;
   border: 1px solid black;
   padding-left: 10px;
+  margin-left:auto; 
+  margin-right:auto;
 }
 
 tr:nth-child(even) {
@@ -251,7 +322,7 @@ tr:nth-child(even) {
 th {
   text-align: left;
   padding: 8px;
-  background-color: #ccdfcb;
+  background-color: paleturquoise;
   color: #000000;
 }
 
@@ -262,7 +333,7 @@ td {
 }
 
 
-/* EXAMPLES -------------------------------------------------- */
+/* EXAMPLES ---------- */
 
 .example > p {
   padding: .5em;
@@ -290,13 +361,14 @@ main .example {
 }
 
 mark {
-  background: linear-gradient(140deg, #1fc8db 51%, #2cb5e8 75%);
+  /*background: linear-gradient(140deg, #1fc8db 51%, #2cb5e8 75%);*/
   background-color: paleturquoise;
   border-radius: 10px;
   padding: 0 .2em;
+  /*color: white;*/
 }
 
-ol {
+ol.content {
   list-style: none;
   counter-reset: my-counter;
   padding-inline-start: 0;
@@ -306,14 +378,14 @@ ol {
   border-radius: 3px;
 }
 
-ol li {
+ol.content li {
   counter-increment: my-counter;
   display: flex;
   padding: .75rem;
   color: white;
 
 }
-ol li::before {
+ol.content li::before {
   display: inline-block;
   text-align: center;
   content: counter(my-counter);
@@ -411,13 +483,32 @@ ul li:nth-child(odd) { background: red; } */
   content:"\f102"
 }
 
-/* MEDIA QUERIES ==================================================== */
+/* YouTube videos */
+
+/* YouTube video ---------------------------------------------------- */
+
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* MEDIA QUERIES ========================================================================== */
 
 @media all and (min-width: 800px) {
   body {
     font-size: 100%;
     display: grid;
-    grid-template-columns: 30% 1fr 20%;
+    grid-template-columns: 35% 1fr;
     grid-template-rows: min-content 1fr min-content;
   }
 
@@ -458,7 +549,7 @@ ul li:nth-child(odd) { background: red; } */
 
   section, h1:not(.heading) {
     padding-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   footer {
@@ -561,10 +652,6 @@ ul li:nth-child(odd) { background: red; } */
    width: 70%;
   }
 
-  .sidebar {
-    display: block;
-  }
-
   main .example {
     margin: 3rem 15% 3rem 15%;
   }
@@ -581,24 +668,80 @@ ul li:nth-child(odd) { background: red; } */
     display: none;
    }
 
-  div.sidebar {
+
+  /*sidebar*/
+  .sidebar {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: inline-block;
-    white-space: nowrap;
-    background-color: #eeeeee;
-    width: auto;
+    white-space: wrap;
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.1), 0 0 2px rgba(0,0,0,.1);
+    width: 30%;
     height: initial !important;
-    overflow: initial;
-    position: static;
-  }
-
-  div.sidebar {
+    overflow: hidden;
     position: fixed;
-    margin-top: 8rem;
-    /*top: 8rem;*/
+    top: 8rem;
+    margin: 2rem;
+    padding-bottom: 1rem;
   }
 
+
+  .sidebar ul li a,
+  .sidebar ul li a:not(nav-subheading) {
+    color: black;
+  }
+
+  .sidebar ul li a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .sidebar ul li a:hover {
+    font-weight: bold;
+    background-color: #f5f5f5;
+  }
+
+  .sidebar ul li a.current {
+    background: #404040;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .sidebar p {
+    margin: 1rem;
+  }
+
+  .sidebar ul li ul li a {
+    font-size: 90%;
+    font-style: italic;
+  }
+
+  section:target:not(:first-child) {
+    padding-top: 5rem; 
+    margin-top: 0;
+  }
+
+  ol.content {
+    margin: 1.5rem 15% 3rem 15%;
+  }
+  
+
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    grid-template-columns: 25% 1fr 15%;
+  }
+
+  .sidebar {
+    width: 20%;
+  }
 }
 
 

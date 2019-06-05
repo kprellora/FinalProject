@@ -18,7 +18,7 @@ function closeNav() {
 
 // desktop nav scroll ---------------------------------------------
 
-var mainNavLinks = document.querySelectorAll("nav ul li a");
+var mainNavLinks = document.querySelectorAll(".sidebar ul li a");
 var mainSections = document.querySelectorAll("main section");
 var x = window.matchMedia("(min-width: 800px)");
 
