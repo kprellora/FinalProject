@@ -272,7 +272,11 @@ section:target {
    }
 
    .section-head {
-     font-size: 5rem;
+     font-size: 2.5rem;
+     margin: 0;
+     text-align: center;
+     color: #ffffff;
+     padding-bottom: 2rem;
    }
 
    /*Container size for formal writing*/
